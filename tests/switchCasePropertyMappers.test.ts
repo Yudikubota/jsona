@@ -58,7 +58,7 @@ describe('switchCasePropertyMappers', () => {
 
             const json = dataFormatter.serialize({ stuff: testModel, includeNames: ['relation-one'] });
 
-            expect(json.included[0].attributes['related-camelized-attr']).to.be.true;
+            expect(json.included[0].properties['related-camelized-attr']).to.be.true;
         });
     });
 

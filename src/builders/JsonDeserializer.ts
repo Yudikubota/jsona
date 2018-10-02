@@ -85,8 +85,8 @@ class JsonDeserializer implements IJsonaModelBuilder {
 
             this.pm.setId(model, data.id);
 
-            if (data.attributes) {
-                this.pm.setAttributes(model, data.attributes);
+            if (data.properties) {
+                this.pm.setAttributes(model, data.properties);
             }
 
             if (data.meta && this.pm.setMeta) {

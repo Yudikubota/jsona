@@ -33,7 +33,7 @@ export type TJsonApiBody = {
 export type TJsonApiData = {
     type: string;
     id?: string|number;
-    attributes?: TAnyKeyValueObject;
+    properties?: TAnyKeyValueObject;
     meta?: TAnyKeyValueObject;
     links?: TJsonApiLinks;
     relationships?: TJsonApiRelationships;
